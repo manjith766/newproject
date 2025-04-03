@@ -1,10 +1,18 @@
 package com.neoteric.inheritance;
 
-public class PunchBaseCar {
+public abstract class PunchBaseCar {
+    public PunchBaseCar() {
+        System.out.println("from punch base car");
+    }
 
-    public Engine getEngine(){
+    public Engine getEngine() {
 
-        return new Engine();
+        return new Engine("200");
 
     }
+
+
+    protected abstract Wheel getWheeltype();
+
+    protected abstract Lights getLighttype();
 }

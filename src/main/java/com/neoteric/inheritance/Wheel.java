@@ -1,8 +1,13 @@
 package com.neoteric.inheritance;
 
 public class Wheel {
+    String wheeltype;
 
+    public Wheel(String wheeltype) {
+        this.wheeltype = wheeltype;
+    }
 
-//     what is abstart method,,use of abstract,when we  should go for abstractmethod//
-
+    public String getWheeltype(){
+        return wheeltype;
+    }
 }
